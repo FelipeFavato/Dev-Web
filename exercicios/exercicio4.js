@@ -6,3 +6,4 @@
 // 👀 Dica: para os ângulos serem de um triângulo válido, a soma dos três
 // ângulos deve ser 180 graus. Um ângulo será considerado inválido se não tiver um valor positivo.
 
+const checkTriangle = (side1, side2, side3) => side1 + side2 + side3 === 180 && side1 > 0 && side2 > 0 && side3 > 0;
