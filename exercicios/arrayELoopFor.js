@@ -52,3 +52,12 @@ const biggestValue = (array) => {
 
 // Descubra quantos valores ímpares existem no array e imprima o resultado.
 // Caso não exista nenhum, imprima a mensagem: “Nenhum valor ímpar encontrado”.
+const oddNumbers = (array) => {
+  let oddTotal = 0;
+  for(i = 0; i < array.length; i += 1) {
+    array[i] % 2 !== 0 ? oddTotal += 1 : oddTotal;
+  }
+
+  return oddTotal === 0 ?
+  'Nenhum valor impar encontrado' : oddTotal;
+}
