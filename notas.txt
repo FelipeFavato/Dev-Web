@@ -1,0 +1,4 @@
+array.push('elemento') => Adiciona um elemento ao final do array
+array.unshift('elemento') => Adiciona um elemento no inicio do array
+array.pop() => Remove o ultimo elemento do array
+array.shift() => Remove o primeiro elemento do array
