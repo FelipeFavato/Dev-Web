@@ -3,6 +3,8 @@ from validate_email import validate_email
 
 
 def test_username_can_only_contain_letters():
+    # O retorno is None serve para quando o caminho feliz de uma função nao
+    # deve retornar nada explicito
     assert validate_email("aaaa@nomewebsite.ext") is None
 
 
