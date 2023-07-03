@@ -1,0 +1,1 @@
+JSON é a sigla para JavaScript Object Notation (Notação de Objeto em Javascript)
