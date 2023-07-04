@@ -1,5 +1,5 @@
 def countdown(n):
-    if n == 0:
+    if n == 0:  # Condição de parada / caso base
         print('Fim!')
     else:
         print(n)
@@ -7,3 +7,8 @@ def countdown(n):
 
 
 countdown(5)
+
+# Nome da função e parâmetro:
+#     Condição de parada
+
+#     Chamada de si mesma
