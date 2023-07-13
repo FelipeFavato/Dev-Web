@@ -1,0 +1,6 @@
+Operações comuns para manipulação de pilhas
+  -> pop, peek, push
+
+pop = retira um item do topo das pilhas
+peek = Le o ultimo item da pilha
+push = adiciona um item no topo da pilha
