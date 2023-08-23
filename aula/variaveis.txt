@@ -1,0 +1,74 @@
+Variáveis locais
+Chamamos de locais as variáveis declaradas dentro de métodos ou construtores.
+Antes de continuar, vamos estabelecer uma regra básica: o ciclo de vida de
+uma variável local vai do ponto onde ela foi declarada até o fim do bloco onde ela foi declarada.
+
+Mas o que é um bloco? Podemos entender como bloco um trecho de código entre chaves.
+
+
+------------------------------------------------------------------------------------------
+Variáveis de instância
+Variáveis de instância ou variáveis de objeto são os atributos dos objetos.
+São declaradas dentro da classe, mas fora de qualquer método ou construtor.
+Podem ser acessadas por qualquer membro da classe e ficam em escopo enquanto o objeto existir:
+
+class Pessoa {
+    // variável de instância ou variável de objeto
+    // Declara a variavel de instancia sem valor, apenas o tipo
+    String nome;
+
+    // Metodo para setar o valor da variavel nome
+    public void setNome(String n) {
+        // acessando a variável de instância no método
+        this.nome = n;
+    }
+}
+
+
+------------------------------------------------------------------------------------------
+Variáveis estáticas (class variables)
+Podemos declarar variáveis que são compartilhadas por todas as instâncias de uma classe
+usando a palavra chave static. Essas variáveis estão no escopo da classe, e lá ficarão
+enquanto a classe estiver carregada na memória (enquanto o programa estiver rodando,
+na grande maioria dos casos).
+
+class Pessoa {
+    // Ao declarar uma variavel como static, todas as instancias dela poderão usa-la
+    static int id = 1;
+}
+
+class Teste {
+    public static void main(String[] args) {
+        Pessoa p = new Pessoa();
+        System.out.println(p.id); // acessando pelo objeto
+        System.out.println(Pessoa.id); // acessando direto pela classe
+    }
+}
+
+
+------------------------------------------------------------------------------------------
+Variáveis com o mesmo nome
+Apesar de parecer estranho, é permitido declarar variáveis locais ou parâmetros com
+o mesmo nome de variáveis de instância ou de classe. Essa técnica é chamada de ::shadowing::.
+Nesses casos, é possível resolver a ambiguidade: para variáveis de classe, podemos
+referenciar pela própria classe; para variáveis de instância, usamos a palavra chave this:
+
+class Pessoa {
+
+    // Quando a variavel for declarada com static, ela pode ser acessada
+    // referenciando a classe
+    static int x = 0;
+    // Quando for uma variavel de instancia, sem o uso de static, ela pode
+    // ser acessada por meio do this.nome
+    int y = 0;
+
+    public static void setX(int x) {
+        // Usando a referência da classe
+        Pessoa.x = x;
+    }
+
+    public void setY(int y) {
+        // usando o this
+        this.y = y;
+    }
+}
