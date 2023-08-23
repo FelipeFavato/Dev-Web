@@ -1,0 +1,5 @@
+Herança => Capacidade de uma classe herdar atributos e metodos de outra classe
+Abstração => Capacidade de abstrair caracteristicas de um objeto do mundo real e
+             transforma-las em atributos de uma classe
+Encapsulamento => Evitar que dados sofram acessos inesperados
+Polimorfismo => Capacidade de redefinir metodos de uma classe herdada
