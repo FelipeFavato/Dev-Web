@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-ScreenmatchApplication<screenmatch>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "br.com.alura.screenmatch.ScreenmatchApplication",
+      "projectName": "screenmatch",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
