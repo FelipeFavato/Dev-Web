@@ -71,3 +71,36 @@
 #     {_id:100,  name:"Casa na Lua", description:"Uma vista unica da Terra"}
 # )
 # Método insertMany([{...}, {...}]) => Insere um array de documentos
+
+
+# Operadores de consulta em arrays
+
+# $all
+# Verifica a presença de valores dentro de um array
+# db.places.find({ amenities: { $all: ["Stove", "Refrigerator"] } })
+
+
+# $elemMatch  (ou)
+# db.places.find(
+#   {amenities: {$elemMatch: {$in: ["TV"]}}}, {_id: true, amenities: true}
+# )
+
+
+# Método Update
+# updateOne() => Altera apenas um valor
+# db.places.updateOne({where}, {$set: { chave: "novo valor" }})
+# db.places.updateOne({where}, {$unset: { chave: "valor" }}) => Apaga chave
+# db.places.updateOne({_id: 101}, {$set: { name: "Apartamento em Marte" }})
+
+
+# updateMany() => Altera varios valores
+# db.places.updateMany({_id: {$gte: 100}}, {$set: {isFree: true} })
+
+
+# Método Delete
+# deleteOne() => Deleta apenas um documento
+# db.places.deleteOne({ _id: 11 })
+
+# deleteMany() => Deleta varios documentos
+# db.places.deleteMany({ "host.host_identity_verified": { $eq: false } })
+# db.places.deleteMany({}) => Remove todos
