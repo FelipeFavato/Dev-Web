@@ -1,0 +1,8 @@
+1693575933510	geckodriver	INFO	Listening on 127.0.0.1:45823
+/snap/firefox/current/firefox.launcher: 60: exec: /snap/code/137/usr/lib/firefox/firefox: not found
+1693575933637	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "48101" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileyPScBl"
+/snap/firefox/current/firefox.launcher: 60: exec: /snap/code/137/usr/lib/firefox/firefox: not found
+1693575933906	geckodriver	INFO	Listening on 127.0.0.1:45841
+/snap/firefox/current/firefox.launcher: 60: exec: /snap/code/137/usr/lib/firefox/firefox: not found
+1693575934412	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "44731" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileOtZfbh"
+/snap/firefox/current/firefox.launcher: 60: exec: /snap/code/137/usr/lib/firefox/firefox: not found
