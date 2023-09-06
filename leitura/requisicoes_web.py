@@ -23,8 +23,8 @@ import requests
 #     print(response)
 
 try:
-    response = requests.get("http://", timeout=2)
+    response = requests.get("http://...", timeout=2)
 except requests.ReadTimeout:
-    response = requests.get("http://", timeout=2)
+    response = requests.get("http://...", timeout=2)
 finally:
     print(response.status_code)
