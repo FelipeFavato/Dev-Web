@@ -1,0 +1,9 @@
+O unittest utiliza quatro conceitos cruciais para construir a estrutura de testes:
+ - test fixture (ambiente de teste):
+    refere-se a funções que são executadas antes e/ou depois dos testes,
+    geralmente criando um contexto necessário para a execução dos testes
+    ou realizando tarefas de limpeza após a conclusão dos mesmos.
+    É comum utilizar fixtures para criar dados que serão utilizados por vários testes
+ - test case (casos de teste)
+ - test suite (conjuntos de teste)
+ - test runner (executor de teste)
