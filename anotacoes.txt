@@ -1,0 +1,36 @@
+DJANGO
+
+MVT (Model, View, Template)
+  Model => Define a estrutura de dados
+  View => Define quais dados serão enviados ao usuário
+  Template => Lidar com a apresentação desses dados para o usuário
+
+
+Modularização
+  Aplicativos Django são compostos por diversos módulos (chamados de app),
+  cada um com sua própria responsabilidade especifica
+
+
+ORM
+  O próprio Django ja fornece um ORM
+
+
+Interface de administração pronta pra usuário
+  Essa interface lê metadados nos modelos para fornecer uma interface que permite
+  gerenciar seus dados - adicionar, editar e excluir registros do banco de dados
+  sem a necessidade de escrever um código
+
+
+Roteamento de URLs
+  O Django usa um sistema de mapeamento simples entre os padrões de URL e
+  requisições HTTP e as funções que definem suas views
+
+
+Autenticação
+  O Django vem com um sistema de autenticação completo de fácil uso, que lida
+  com contas de usuario, grupos, permissoes e sessoes baseadas em cookies.
+
+
+Segurança
+  O Django tem alguns recursos integrados para ajudar a proteger as aplicações
+  contra vulnerabilidades (injeção de SQL, CSRF e XSS)
